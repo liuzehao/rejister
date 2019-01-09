@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leo-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leo-webapp" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/success/.sass-cache" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/success/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/success/featured_img.png" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/success/fonts" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/success/images" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/success/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/success/sass" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/table/css" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/table/images" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/assets/table/js" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/leo-webapp/src/main/webapp/css/table.css" charset="GBK" />
+  </component>
+</project>

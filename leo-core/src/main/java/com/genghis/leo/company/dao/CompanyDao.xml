@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD iBatis Mapper 3.0 //EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.genghis.leo.company.dao.CompanyDao">
+
+       <select id="getCompanyListPage" resultType="Company">
+              SELECT * FROM  sys_register
+       </select>
+       <select id="searchCompanyByfid" resultType="CompanyRelation">
+              SELECT * FROM  sys_company where fid= #{id}
+       </select>
+       <select id="getCompanyByid" resultType="Company">
+              SELECT * FROM  sys_history where idcard= #{id}
+       </select>
+       <select id="getClassInfo" resultType="classNum">
+              SELECT * FROM  sys_class where name=#{id}
+       </select>
+       <select id="getAllCompanyList" resultType="Company">
+              SELECT * FROM  sys_register
+       </select>
+       <delete id="deleteCompanyInfo" parameterType="String">
+              DELETE FROM sys_register WHERE idcard = #{id}
+       </delete>
+       <select id="searchCompanyListPage" resultType="Company">
+              SELECT * FROM  stu_wrong WHERE  #{attribute}= #{value}
+       </select>
+       <insert id="setCompanyInfo" parameterType="Company">
+              REPLACE INTO sys_register
+              VALUES(#{idcard},#{phone},#{name},#{sex},#{fid},
+              #{rname},#{billname},#{address},#{stay},
+             #{fare1},#{payway1},0,#{fare2},#{fare3},#{fare4},#{payway2},#{payway3},#{payway4},
+             #{classnum},#{sum},#{day}
+             )
+       </insert>
+       <insert id="setCompanyHistory" parameterType="Company">
+              REPLACE INTO sys_history
+              VALUES(#{idcard},#{phone},#{name},#{sex},#{fid},
+              #{rname},#{billname},#{address},#{stay},
+              #{fare1},#{payway1},0,#{fare2},#{fare3},#{fare4},#{payway2},#{payway3},#{payway4},
+              #{classnum},#{sum},#{day}
+              )
+       </insert>
+       <select id="searchIdexit" resultType="String">
+              select 1 from sys_register where idcard =#{id} limit 1;
+       </select>
+       <update id="surePayed" parameterType="String">
+              UPDATE sys_register SET payed=1  WHERE idcard=#{id}
+       </update>
+</mapper>
